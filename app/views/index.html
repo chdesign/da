@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block page_title %}
-  GOV.UK prototype kit
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
 {% endblock %}
 
 {% block content %}
@@ -11,54 +11,25 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        {{serviceName}} prototype
+      </h1>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <p>This is the first prototype version for a landing page for a user. Research has show that some users might need signposting to tasks and this landing page hopes to answer that need.</p>
 
-      <h2 class="heading-medium">About this page</h2>
+      <ul class="list list-bullet">
+        <li><a href="landing">Version 1</a> &ndash; similar to GOV.UK landing page with a large header and then content broken into sections</li>
+        <li><a href="accordion">Version 2</a> &ndash; more stripped down header and uses accordion to make content potentially more scanable, helping the user get to the thing they need quicker</li>
+      </ul>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
 
-			<h2 class="heading-medium">Examples and documentation</h2>
 
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
 
-      <h2 class="heading-medium">Other resources</h2>
 
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
+
+      <p class="form-hint" style="margin-top: 60px">Built using {{releaseVersion }} of the GOV.UK prototype kit.</p>
 
     </div>
   </div>
 </main>
 
 {% endblock %}
-
-
