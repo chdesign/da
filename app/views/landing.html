@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<header class="homepage-top">
+  <div class="homepage-top-inner">
+
+    <div class="welcome-block">
+      <div class="inner-block floated-children">
+        <div class="welcome-text">
+          <div class="floated-inner-block">
+            <h1>
+              Welcome to Sheffield Jobcentre Plus
+            </h1>
+            <p>Using these machines you can complete common job search tasks and access the internet</p>
+
+            <form action="http://www.google.com/search" method="get">
+
+              <div class="govuk-search on-govuk-blue" data-module="toggle-input-class-on-focus">
+                <label for="search-main-abebc107" class="search-label">
+                  Search the internet using Google
+                </label>
+                <div class="search-wrapper">
+                  <input type="search" value="" id="search-main-abebc107" name="q" title="Search" class="search-element search-input js-class-toggle">
+                  <div class="search-element search-submit-wrapper">
+                    <button type="submit" class="search-submit">Search</button>
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+        <div class="content-links">
+          <div class="floated-inner-block content-links-inner">
+            <h2>Popular at the Jobcentre</h2>
+            <ul>
+              <li><a href="https://www.gov.uk/jobsearch">Universal Jobmatch job search</a></li>
+              <li><a href="https://www.indeed.co.uk/">Indeed job search</a></li>
+              <li><a href="https://www.monster.co.uk/">Word processor</a></li>
+              <li><a href="https://www.monster.co.uk/">Monster job search</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h2 class="heading-large">
+        Job search
+      </h2>
+      <p>You can search and apply for full or part-time jobs on <a href="https://www.gov.uk/jobsearch">Universal Jobmatch job search</a>.</p>
+
+      <h3 class="heading-small">
+        Other job search websites
+      </h3>
+      <ul class="list list-bullet">
+        <li><a href="https://www.indeed.co.uk/">Indeed job search</a></li>
+        <li><a href="http://www.jobsite.co.uk/">Jobsite job search</a></li>
+        <li><a href="https://www.monster.co.uk/">Monster job search</a></li>
+        <li><a href="https://www.reed.co.uk/">Reed job search</a></li>
+      </ul>
+
+
+
+
+
+      <h2 class="heading-large">
+        CVs and cover letters
+      </h2>
+      <p>You can use <a href="#0">Office 365</a> to create documents.</p>
+
+      <p>Office 365 give you access to a</p>
+      <ul class="list list-bullet">
+        <li><a href="#0">word processor</a></li>
+        <li><a href="0">spreadsheet application</a></li>
+        <li><a href="#0">presentation application</a></li>
+      </ul>
+
+    </div>
+
+    {% include "includes/help-aside.html" %}
+
+  </div>
+</main>
+
+{% endblock %}

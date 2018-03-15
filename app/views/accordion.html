@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <h1 class="heading-large">
+        Welcome to Sheffield Jobcentre Plus
+      </h1>
+      <p class="lede">
+        Using these machines you can complete common job search tasks and access the internet
+      </p>
+
+      <div class="accordion">
+
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">Find and apply for jobs</h2>
+            <!-- <p>Find and apply for jobs</p> -->
+          </div>
+          <div class="accordion-section-body">
+            <p>You can search and apply for full or part-time jobs on <a href="https://www.gov.uk/jobsearch">Universal Jobmatch job search</a>.</p>
+
+            <h3 class="heading-small">
+              Other job search websites
+            </h3>
+            <ul class="list list-bullet">
+              <li><a href="https://www.indeed.co.uk/">Indeed job search</a></li>
+              <li><a href="http://www.jobsite.co.uk/">Jobsite job search</a></li>
+              <li><a href="https://www.monster.co.uk/">Monster job search</a></li>
+              <li><a href="https://www.reed.co.uk/">Reed job search</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">CVs and cover letters</h2>
+            <!-- <p>Access tools and read tips</p> -->
+          </div>
+          <div class="accordion-section-body">
+            <p>You can use <a href="#0">Office 365</a> to create documents.</p>
+
+            <p>Office 365 give you access to a</p>
+            <ul class="list list-bullet">
+              <li><a href="#0">word processor</a></li>
+              <li><a href="0">spreadsheet application</a></li>
+              <li><a href="#0">presentation application</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="accordion-section">
+
+          <div class="accordion-section-header">
+            <h2 class="heading-medium">Social media</h2>
+            <!-- <p>Access tools and read tips</p> -->
+          </div>
+          <div class="accordion-section-body">
+            <p>Social media can be a useful aid during your job search.</p>
+
+            <ul class="list list-bullet">
+              <li><a href="#0">Facebook</a></li>
+              <li><a href="#0">LinkedIn</a></li>
+              <li><a href="#0">Twitter</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    {% include "includes/help-aside.html" %}
+
+  </div>
+</main>
+
+{% endblock %}
